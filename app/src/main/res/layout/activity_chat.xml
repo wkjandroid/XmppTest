@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wkj.xmpptest.activity.ChatActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:background="#6f62c7"
+        android:textColor="#4aa343"
+        android:text="ggg"
+        android:textSize="24sp"
+    
+    />
+    <ListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#adb7c6"
+        ></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <!--shurukuang-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_body"
+            android:layout_weight="1"
+            />
+        <!--fasonganniu-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send"
+            android:text="发送"
+            />
+    </LinearLayout>
+</LinearLayout>
